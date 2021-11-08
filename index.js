@@ -5,7 +5,7 @@ const express = require('express');
 const server = express();
 
 const apiRouter = require('./api');
-server.use('./api', apiRouter);
+server.use('/api', apiRouter);
 
 const morgan = require('morgan');   //IS THIS IN THE RIGHT PLACE? 
 server.use(morgan('dev'));
