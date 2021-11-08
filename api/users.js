@@ -6,7 +6,7 @@ const usersRouter = express.Router();
 
 usersRouter.use((req, res, next) => {
   console.log("A request is being made to /users");
-
+//should there be more here?
   next();
 });
 
